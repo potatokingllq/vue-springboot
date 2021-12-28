@@ -1,0 +1,16 @@
+server:
+  port: 8081
+  address: 127.0.0.1
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/crazy
+    username: root
+    password: llq19981213
+  main:
+    allow-bean-definition-overriding: true
+    allow-circular-references: true
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
